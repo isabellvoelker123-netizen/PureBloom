@@ -409,3 +409,23 @@ figcaption {
     grid-template-columns: 1fr;
   }
 }
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.footer-links a {
+  color: var(--sage-dark);
+  font-weight: 600;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+#about,
+#contact,
+#imprint {
+  scroll-margin-top: 100px;
+}
