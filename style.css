@@ -429,3 +429,112 @@ figcaption {
 #imprint {
   scroll-margin-top: 100px;
 }
+/* FAQ */
+
+.faq-list {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.faq-list details {
+  margin-bottom: 1rem;
+  padding: 1.2rem 1.4rem;
+  background: var(--white);
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(46, 51, 43, 0.06);
+}
+
+.faq-list summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.faq-list details p {
+  color: var(--muted);
+  margin-bottom: 0;
+}
+
+
+/* Waitlist */
+
+.waitlist-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.waitlist-form {
+  display: grid;
+  gap: 1rem;
+  padding: 2rem;
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.waitlist-form label {
+  display: grid;
+  gap: 0.4rem;
+  font-weight: 600;
+}
+
+.waitlist-form input[type="text"],
+.waitlist-form input[type="email"] {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  background: var(--cream);
+  border: 1px solid rgba(86, 97, 73, 0.25);
+  border-radius: 12px;
+}
+
+.consent {
+  grid-template-columns: auto 1fr !important;
+  align-items: start;
+  font-weight: 400 !important;
+}
+
+
+/* Social links */
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.social-links a {
+  color: var(--sage-dark);
+  font-weight: 600;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+
+/* Scroll animations */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* Mobile version */
+
+@media (max-width: 900px) {
+  .waitlist-section {
+    grid-template-columns: 1fr;
+  }
+}
